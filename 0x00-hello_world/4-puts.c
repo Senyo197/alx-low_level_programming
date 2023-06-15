@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - takes the input
-*return - returns the output
+*Return: 0 if function is not an integer
 */
 int main(void)
 {
