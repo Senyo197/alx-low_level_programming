@@ -9,7 +9,8 @@
 int main(void)
 {
 int n;
-int lastDig = n % 10;
+int digits = n;
+int lastDig = digits % 10;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (lastDig > 5)
