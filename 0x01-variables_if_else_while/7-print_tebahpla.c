@@ -1,14 +1,18 @@
 #include <stdio.h>
+
 /**
-*main - print single digit numbers
+*main - prints lowercase alphabets reversely
 *Return: 0, unless conditioned
 */
 int main(void)
 {
-int sdn = 0;
-for (sdn = 0; sdn <= 9; sdn++)
+
+char lwc = 'z';
+
+while (lwc >= 'a')
 {
-putchar(sdn);
+putchar(lwc);
+lwc--;
 }
 putchar('\n');
 
