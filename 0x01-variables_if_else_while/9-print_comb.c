@@ -11,8 +11,11 @@ int sdn = 0;
 while (sdn <= 9)
 {
 putchar(sdn + '0');
+if (sdn < 9)
+{
 putchar(',');
 putchar(' ');
+}
 sdn++;
 }
 putchar('\n');
