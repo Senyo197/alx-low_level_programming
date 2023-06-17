@@ -8,9 +8,9 @@ int main(void)
 {
 int b16 = 0;
 
-while (b16 <= 16)
+while (b16 < 16)
 {
-if (b16 < 10)
+if (b16 <= 9)
 {
 putchar(b16 + '0');
 }
@@ -18,7 +18,7 @@ else
 {
 putchar('a' + (b16 - 10));
 }
-b16++;
+++b16;
 }
 putchar('\n');
 
