@@ -1,4 +1,0 @@
-1-last_digit.c:12:5: error: ‘n’ is used uninitialized in this function [-Werror=uninitialized]
-   12 | int lastDig = n % 10;
-      |     ^~~~~~~
-cc1: all warnings being treated as errorsq
