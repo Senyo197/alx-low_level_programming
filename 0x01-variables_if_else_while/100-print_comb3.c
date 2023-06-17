@@ -6,9 +6,11 @@
 */
 int main(void)
 {
-for (int fcn = 0; fcn <= 9; fcn++)
+int fcn, scn;
+
+for (fcn = 0; fcn <= 9; fcn++)
 {
-for (int scn = fcn + 1; scn <= 9; scn++)
+for (scn = fcn + 1; scn <= 9; scn++)
 {
 putchar(fcn + '0');
 putchar(scn + '0');
