@@ -1,5 +1,5 @@
-#ifndef MAIN_C
-#define MAIN_C
+//#ifndef MAIN_C
+//#define MAIN_C
 
 int _putchar (char c)
 {
@@ -7,4 +7,4 @@ int _putchar (char c)
 	return (0);
 }
 
-#endif
+//#endif
