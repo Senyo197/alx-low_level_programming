@@ -12,14 +12,3 @@ void print_alphabet(void)
 		_putchar(lwc);
 	_putchar('\n');
 }
-
-/**
-*main - chack the code
-*Return: 0 always, unless conditioned
-*/
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
-}
