@@ -10,6 +10,7 @@ void print_alphabet(void)
 
 	for (lwc = 'a'; lwc <= 'z'; lwc++)
 		_putchar(lwc);
+	_putchar('\n');
 }
 
 /**
