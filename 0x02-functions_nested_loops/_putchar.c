@@ -6,7 +6,7 @@
 *Return: 0
 */
 
-int  my_putchar(char c)
+int  _putchar(char c)
 {
 	write(1, &c, 1);
 	return (0);
