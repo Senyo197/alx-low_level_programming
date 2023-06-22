@@ -8,7 +8,7 @@ int main(void)
 int sdn = 0;
 for (sdn = 0; sdn <= 9; sdn++)
 {
-printf("%d", sdn);
+	printf("%d", sdn);
 }
 printf("\n");
 

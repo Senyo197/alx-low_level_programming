@@ -14,13 +14,13 @@ for (scn = fcn + 1; scn <= 9; scn++)
 {
 for (tcn = scn + 1; tcn <= 9; tcn++)
 {
-putchar(fcn + '0');
-putchar(scn + '0');
-putchar(tcn + '0');
+	putchar(fcn + '0');
+	putchar(scn + '0');
+	putchar(tcn + '0');
 if (fcn < 7 || scn < 8 || tcn < 9)
 {
-putchar(',');
-putchar(' ');
+	putchar(',');
+	putchar(' ');
 }
 }
 }
