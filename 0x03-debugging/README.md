@@ -1,1 +1,1 @@
-This is a directory for debugging files
+This project is to debug codes to output correct inputs in C programming
