@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
  *main - this function tells whether or not number is - || + || 0
 *Return: 0, unless conditioned
