@@ -14,9 +14,9 @@ if (size <= 0)
 }
 else
 {
-	for (sqr1 = 0; sqr1 > size; sqr1++)
+	for (sqr1 = 0; sqr1 < size; sqr1++)
 {
-	for (sqr2 = 0; sqr2 > size; sqr2++)
+	for (sqr2 = 0; sqr2 < size; sqr2++)
 {
 	_putchar('#');
 }
