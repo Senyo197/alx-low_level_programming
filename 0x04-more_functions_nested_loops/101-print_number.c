@@ -13,7 +13,7 @@ int itg = n;
 	itg = -itg;
 	_putchar(45); /* ASCII "-" */
 }
-	else if (itg > 9)
+	if (itg > 9)
 {
 	print_number(itg / 10);
 }
