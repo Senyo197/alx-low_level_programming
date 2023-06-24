@@ -20,7 +20,7 @@ while (pfs <= sqr)
 	if (gn % pfs == 0)
 {
 	mpf = gn / pfs;
-{
+}
 	pfs++;
 }
 printf("%ld\n", mpf);
