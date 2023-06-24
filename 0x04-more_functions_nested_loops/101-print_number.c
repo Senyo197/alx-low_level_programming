@@ -7,15 +7,15 @@
 void print_number(int n)
 {
 int itg = n;
-
-	if (itg < 0)
+if (itg < 0)
 {
 	_putchar(45); /* ASCII "-" */
 	itg = -itg;
 }
 	if (itg > 9)
 {
-	print_number(itg / 10);
+	unsigned int dgts = itg;
+	print_number(dgts / 10);
 }
-	_putchar((itg % 10) + '0');
+_putchar((itg % 10) + '0');
 }
