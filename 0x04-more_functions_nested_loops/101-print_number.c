@@ -10,8 +10,8 @@ int itg = n;
 
 	if (itg < 0)
 {
-	itg = -itg;
 	_putchar(45); /* ASCII "-" */
+	itg = -itg;
 }
 	if (itg > 9)
 {
