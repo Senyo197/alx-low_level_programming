@@ -23,4 +23,6 @@ void times_table(void);
 
 void jack_bauer(void);
 
+int add(int, int);
+
 #endif
