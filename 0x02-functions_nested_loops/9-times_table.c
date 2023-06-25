@@ -16,21 +16,18 @@ int mof9 = 0;
 
 for (x = 0; x <= 9; x++)
 {
-	if (x < 9)
-{
-	_putchar(',');
-	_putchar(' ');
-}
 	for (y = 0; y <= 9; y++)
 {
-	if (y < 9)
+	mof9 = x * y;
+
+	if (y != 0)
 {
 	_putchar(',');
 	_putchar(' ');
 }
-	mof9 = x * y;
 	if (mof9 < 10)
 {
+	_putchar(' ');
 	_putchar(mof9 + '0');
 }
 	else
@@ -38,7 +35,7 @@ for (x = 0; x <= 9; x++)
 	_putchar((mof9 / 10) + '0');
 	_putchar((mof9 % 10) + '0');
 }
-	_putchar('\n');
 }
+	_putchar('\n');
 }
 }
