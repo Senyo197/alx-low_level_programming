@@ -25,7 +25,11 @@ for (x = 0; x <= 9; x++)
 	_putchar(',');
 	_putchar(' ');
 }
-	if (mof9 < 10)
+	if (y == 0)
+{
+	_putchar(mof9 + '0');
+}
+	else if (mof9 < 10)
 {
 	_putchar(' ');
 	_putchar(mof9 + '0');
