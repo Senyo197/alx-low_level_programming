@@ -17,8 +17,3 @@ while (a >= 0)
 }
 _putchar('\n');
 }
-
-int _putchar(char c)
-{
-	return (putchar(c));
-}
