@@ -2,6 +2,7 @@
 
 /**
 *_puts - print string to stdout
+*@str: message to be printed
 */
 void _puts(char *str)
 {
