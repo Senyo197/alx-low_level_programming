@@ -4,6 +4,7 @@
 *_strncat - join two string with n number of characters
 *@dest: destination string
 *@src: source string
+*@n: number of characters to be joined
 *Return: destination string
 */
 
