@@ -17,4 +17,8 @@ void reverse_array(int *a, int n);
 
 char *string_toupper(char *alph);
 
+char *cap_string(char *f_lttr);
+
+#include <ctype.h>
+
 #endif /* MAIN_H */
