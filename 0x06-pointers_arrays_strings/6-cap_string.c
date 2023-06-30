@@ -16,10 +16,19 @@ size_t wd_lnth = strlen(f_lttr);
 
 while (a < wd_lnth)
 {
-	if (isspace(f_lttr[a]) || f_lttr[a] == ',' || f_lttr[a] == '.' ||
-f_lttr[a] == ';' || f_lttr[a] == '!' || f_lttr[a] == '"' || f_lttr[a] == '('
-|| f_lttr[a] == ')' || f_lttr[a] == '{' || f_lttr[a] == '}' || f_lttr[a]
-== '?')
+	if (f_lttr[a] == ',' ||
+	    f_lttr[a] == '.' ||
+	    f_lttr[a] == ';' ||
+	    f_lttr[a] == '!' ||
+	    f_lttr[a] == '"' ||
+	    f_lttr[a] == '(' ||
+	    f_lttr[a] == ')' ||
+	    f_lttr[a] == '{' ||
+	    f_lttr[a] == '}' ||
+	    f_lttr[a] == '?' ||
+	    f_lttr[a] == '\n' ||
+	    f_lttr[a] == '\t' ||
+	    f_lttr[a] == ' ')
 {
 	cap_next = 1;
 }
