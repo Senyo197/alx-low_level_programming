@@ -21,4 +21,6 @@ char *cap_string(char *f_lttr);
 
 #include <ctype.h>
 
+char *leet(char *subt);
+
 #endif /* MAIN_H */
