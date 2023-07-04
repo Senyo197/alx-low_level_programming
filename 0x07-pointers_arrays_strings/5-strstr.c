@@ -4,6 +4,7 @@
  *_strstr - locates string in substring
  *@haystack: string to be located
  *@needle: substring
+ *Return: null if no string is found
  */
 
 char *_strstr(char *haystack, char *needle)
@@ -14,17 +15,17 @@ char *_strstr(char *haystack, char *needle)
 	{
 		a = haystack;
 		b = needle;
-		
+
 		for (; *a == *b && *b != '\0'; a++)
 		{
 			b++;
-		}		
+		}
 
 		if (*b == '\0')
 		{
 			return (haystack);
 		}
-	}	
+	}
 
 	return (NULL);
 }
