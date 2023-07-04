@@ -25,16 +25,13 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-	
 
 		if (b == 0)
 		{
 			return (a);
 		}
-		
 		a++;
 	}
-	
 	return (a);
 }
 

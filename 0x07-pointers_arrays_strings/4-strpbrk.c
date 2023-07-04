@@ -2,8 +2,9 @@
 
 /**
  *_strpbrk - locates first ocuurance of characters in a string
- *@s: Pointer to the null-terminated string to be searched 
- *@accept: Pointer to the null-terminated string containing the set of characters to search for
+ *@s: Pointer to the null-terminated string to be searched
+ *@accept: Pointer to the null-terminated string containing
+ *the set of characters to search for
  *Return: null if no such byte is found
  */
 
