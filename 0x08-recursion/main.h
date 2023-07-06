@@ -15,4 +15,6 @@ int _pow_recursion(int x, int y);
 
 int _sqrt_recursion(int n);
 
+int find_sqrt(int n, int st, int end);
+
 #endif /* MAIN_H */
