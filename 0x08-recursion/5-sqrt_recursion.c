@@ -8,7 +8,7 @@
   *Return: square root of n or -1 if no natural square root found
   */
 
-int find_sqrt(int n, int st, int end)
+int find_sqrt(long n, long st, long end)
 {
 	int mdd = (st + end) / 2;
 	int sq = mdd * mdd;
@@ -52,6 +52,6 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	rst = find_sqrt(n, 1, n);
+	rst = find_sqrt((long)n, 1, (long)n);
 	return (rst);
 }
