@@ -4,6 +4,7 @@
   *find_pm - help to find the prime number
   *@n: number to be checked
   *@divide: the current divisor to check
+  *Return: 1, 0 if otherwise
   */
 
 int find_pm(int n, int divide)

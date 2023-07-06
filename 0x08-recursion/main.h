@@ -19,4 +19,6 @@ int find_sqrt(long n, long st, long end);
 
 int is_prime_number(int n);
 
+int find_pm(int n, int divide);
+
 #endif /* MAIN_H */
