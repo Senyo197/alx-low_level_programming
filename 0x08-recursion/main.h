@@ -17,4 +17,6 @@ int _sqrt_recursion(int n);
 
 int find_sqrt(long n, long st, long end);
 
+int is_prime_number(int n);
+
 #endif /* MAIN_H */

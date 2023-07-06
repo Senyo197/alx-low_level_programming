@@ -13,6 +13,11 @@ int find_sqrt(long n, long st, long end)
 	int mdd = (st + end) / 2;
 	int sq = mdd * mdd;
 
+	if (n == 0)
+	{
+		return (0);
+	}
+
 	if (st > end)
 	{
 		return (-1);
@@ -40,18 +45,13 @@ int find_sqrt(long n, long st, long end)
 */
 int _sqrt_recursion(int n)
 {
-	int rst;
-
 	if (n < 0)
 	{
 		return (-1);
 	}
-
-	if (n == 0 || n == 1)
+	else
 	{
-		return (n);
+		return (find_sqrt(n, 1, n));
 	}
-
-	rst = find_sqrt((long)n, 1, (long)n);
-	return (rst);
 }
+
