@@ -7,4 +7,6 @@ int main(int argc, char* argv[]);
 
 #include <stdlib.h>
 
+#include <ctype.h>
+
 #endif
