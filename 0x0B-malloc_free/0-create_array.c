@@ -20,12 +20,10 @@ char *create_array(unsigned int size, char c)
 
 		arr[size] = '\0';
 	}
-	else
+
+	if (arr != NULL)
 	{
-		if (arr != NULL)
-		{
 			return NULL;
-		}
 	}
 
 	return (arr);
