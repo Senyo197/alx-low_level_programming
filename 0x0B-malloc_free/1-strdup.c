@@ -11,7 +11,7 @@ char *_strdup(char *str)
 
 	char *dupr = (char *)malloc(lnth);
 
-	if (str == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
