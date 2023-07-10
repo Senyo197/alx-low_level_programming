@@ -25,6 +25,14 @@ char *create_array(unsigned int size, char c)
 
 		arr[size] = '\0';
 	}
+	else
+	{
+		arr = (char *)malloc(sizeof(char));
+		if (arr != NULL)
+		{
+			arr[0] = '\0';
+		}
+	}
 
 	return (arr);
 }
