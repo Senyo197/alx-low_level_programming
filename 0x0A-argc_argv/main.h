@@ -3,7 +3,11 @@
 
 int main(int argc, char* argv[]);
 
+int ch_coins (int cent, int coins[], int coins_deno);
+
 #include <stdio.h>
+
+#include <limits.h>
 
 #include <stdlib.h>
 
