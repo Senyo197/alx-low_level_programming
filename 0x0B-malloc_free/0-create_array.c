@@ -23,7 +23,11 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		arr = (char *)malloc(sizeof(char));
-		arr[0] = '\0';
+
+		if (arr != NULL)
+		{
+			arr[0] = '\0';
+		}
 	}
 
 	return (arr);
