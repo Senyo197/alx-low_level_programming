@@ -17,5 +17,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	value = malloc(nmemb * size);
 
+	if (value != NULL)
+	{
+		memset(value, 0, nmemb * size);
+	}
+
 	return (value);
 }
