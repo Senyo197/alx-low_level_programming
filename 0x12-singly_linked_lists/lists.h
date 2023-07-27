@@ -6,7 +6,7 @@
 #include <stddef.h>
 
 /**
-*list_node - singly linked list
+*struct list_node - singly linked list
 *@str: string
 *@next: next node
 *@len: length of the string
