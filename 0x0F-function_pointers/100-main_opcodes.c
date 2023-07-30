@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int number_of_bytes;
 	int a;
-	unsigned char *ptr = (char *)main;
+	char *ptr = (char *)main;
 
 	number_of_bytes = atoi(argv[1]);
 
