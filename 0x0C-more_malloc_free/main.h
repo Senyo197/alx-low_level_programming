@@ -16,7 +16,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _putchar(char c);
 int main(int argc, char *argv[]);
 int check_numbers(char *numb);
-char *mul(char *arg1, char *arg2);
+char *mul(char *num1, char *num2);
 int len_of_str(char *s);
 void error(void);
 

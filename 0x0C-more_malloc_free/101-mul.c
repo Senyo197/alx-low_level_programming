@@ -38,19 +38,19 @@ int len_of_str(char *s)
 
 /**
 *mul - multiply two numbers
-*@arg1: first number
-*@arg2: second number
+*@num1: first number
+*@num2: second number
 *Return: multiplied mul
 */
-char *mul(char *arg1, char *arg2)
+char *mul(char *num1, char *num2)
 {
 	int a, b, c, lnth, lnth2, mov, n, n2, pdt;
 	char *rst, *pdt_str;
 
-	lnth = len_of_str(arg1);
-	lnth2 = len_of_str(arg2);
+	lnth = len_of_str(num1);
+	lnth2 = len_of_str(num2);
 
-	if (!check_numbers(arg1) || !check_numbers(arg2))
+	if (!check_numbers(num1) || !check_numbers(num2))
 		return (NULL);
 	rst = calloc((lnth + lnth2 + 1), sizeof(char));
 	if (!rst)
@@ -58,10 +58,10 @@ char *mul(char *arg1, char *arg2)
 	for (a = lnth - 1; a >= 0; a--)
 	{
 		mov = 0;
-		n = arg1[a] - '0';
+		n = num1[a] - '0';
 		for (b = lnth2 - 1; b >= 0; b--)
 		{
-			n2 = arg2[b] - '0';
+			n2 = num2[b] - '0';
 			pdt = n * n2 + mov + rst[a + b + 1];
 			rst[a + b + 1] = pdt % 10;
 			mov = pdt / 10;
