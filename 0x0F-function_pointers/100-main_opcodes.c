@@ -11,9 +11,13 @@ void prnt_opcode(int number_of_bytes)
 
 	for (a = 0; a < number_of_bytes; a++)
 	{
-		printf("%02x ", oprt[a]);
+		if (a == number_of_bytes - 1)
+		{
+			printf("%02hhx\n", oprt[a]);
+			break;
+		}
 	}
-	printf("\n");
+	printf("%02hhx ", oprt[a]);
 }
 
 /**
@@ -24,13 +28,15 @@ void prnt_opcode(int number_of_bytes)
  */
 int main(int argc, char *argv[])
 {
+	int number_of_bytes;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	int number_of_bytes = atoi(argv[1]);
+	number_of_bytes = atoi(argv[1]);
 
 	if (number_of_bytes < 0)
 	{
