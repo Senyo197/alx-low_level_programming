@@ -1,26 +1,6 @@
 #include "function_pointers.h"
 
 /**
- *prnt_opcode - print operation code
- *@number_of_bytes: - number of bytes to be printed
- */
-void prnt_opcode(int number_of_bytes)
-{
-	unsigned char *oprt = (unsigned char *)main;
-	int a;
-
-	for (a = 0; a < number_of_bytes; a++)
-	{
-		if (a == number_of_bytes - 1)
-		{
-			printf("%02hhx\n", oprt[a]);
-			break;
-		}
-	}
-	printf("%02hhx ", oprt[a]);
-}
-
-/**
   *main - print operation code
   *@argc: number of command line arguments
   *@argv: array of command line arguments
@@ -29,6 +9,10 @@ void prnt_opcode(int number_of_bytes)
 int main(int argc, char *argv[])
 {
 	int number_of_bytes;
+	int a;
+	unsigned char *ptr = (char *)main;
+
+	number_of_bytes = atoi(argv[1]);
 
 	if (argc != 2)
 	{
@@ -44,6 +28,14 @@ int main(int argc, char *argv[])
 		return (2);
 	}
 
-	prnt_opcode(number_of_bytes);
+	for (a = 0; a < number_of_bytes; a++)
+	{
+		if (a == number_of_bytes - 1)
+		{
+			printf("%02hhx\n", ptr[a]);
+			break;
+		}
+		printf("%02hhx ", ptr[a]);
+	}
 	return (0);
 }
