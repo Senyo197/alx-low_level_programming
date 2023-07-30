@@ -13,8 +13,11 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
+int _putchar(char c);
 int main(int argc, char *argv[]);
 int check_numbers(char *numb);
-void mul(char *num1, char *num2);
+char *mul(char *arg1, char *arg2);
+int len_of_str(char *s);
+void error(void);
 
 #endif
