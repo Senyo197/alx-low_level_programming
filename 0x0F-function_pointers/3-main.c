@@ -1,5 +1,8 @@
 #include "3-calc.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
   *main - calculate arguments per various calculation methods
   *@argc: number of command line arguments
