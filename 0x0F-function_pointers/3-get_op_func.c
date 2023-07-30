@@ -11,7 +11,7 @@
 int (*get_op_func(char *s))(int, int)
 {
 
-	int a;
+	int a = 0;
 
 	op_t cal_mtd[] = {
 		{"+", op_add},
@@ -22,11 +22,8 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL},
 	};
 
-	for (a = 0; cal_mtd[a].op != NULL; a++)
-	{
-		if (strcmp(cal_mtd[a].op, s) == 0)
-			return (cal_mtd[a].f);
-	}
+	while (cal_mtd[a].op != NULL && *(cal_mtd[a].op) != *s)
+		a++;
 
-	return (NULL);
+	return (cal_mtd[a].f);
 }
