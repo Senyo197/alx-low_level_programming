@@ -6,10 +6,9 @@
   */
 void free_list(list_t *head)
 {
-	head = head->next;
-
 	while (head)
 	{
+		list_t *temporal = head;
 		head = head->next;
 
 		if (temporal->str)
