@@ -55,8 +55,6 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 
-	if (format)
-	{
 		while (format[a])
 		{
 			switch (format[a])
@@ -84,7 +82,6 @@ void print_all(const char * const format, ...)
 				printf("%s", _space);
 
 		}
-	}
 	va_end(list);
 
 	printf("\n");
