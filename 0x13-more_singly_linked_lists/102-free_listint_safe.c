@@ -8,8 +8,8 @@
 size_t free_listint_safe(listint_t **h)
 {
 	size_t lnth = 0;
-	listint_t hold;
-	listint_t *new = h;
+	listint_t *hold;
+	listint_t *new = *h;
 
 	if (!h || !*h)
 		return (0);

@@ -9,16 +9,17 @@ size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *st_loop = NULL;
 	size_t nodes = 0;
+	const listint_t *slow = head;
+	const listint_t *fast = head;
 
 	if (head == NULL)
 		return (0);
-	const listint_t *slow = head;
-	const listint_t *fast = head;
 	while (fast && fast->next)
 	{
 		slow = slow->next;
 		fast = fast->next->next;
-		if(slow == fast)
+
+		if (slow == fast)
 		{
 			slow = st_loop;
 			break;
