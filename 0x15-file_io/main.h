@@ -14,21 +14,26 @@ ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
 
-typedef struct {
-    unsigned char ident[EI_NIDENT];
-    Elf32_Half type;
-    Elf32_Half machine;
-    Elf32_Word version;
-    Elf32_Addr entry_point;
-    Elf32_Off program_header_offset;
-    Elf32_Off section_header_offset;
-    Elf32_Word flags;
-    Elf32_Half header_size;
-    Elf32_Half program_header_entry_size;
-    Elf32_Half program_header_count;
-    Elf32_Half section_header_entry_size;
-    Elf32_Half section_header_count;
-    Elf32_Half section_name_string_index;
+/**
+*struct - a structure for the Elf Headers
+*@ElfHeader: type definition for struct ElF headers
+*/
+typedef struct
+{
+unsigned char ident[EI_NIDENT];
+Elf32_Half type;
+Elf32_Half machine;
+Elf32_Word version;
+Elf32_Addr entry_point;
+Elf32_Off program_header_offset;
+Elf32_Off section_header_offset;
+Elf32_Word flags;
+Elf32_Half header_size;
+Elf32_Half program_header_entry_size;
+Elf32_Half program_header_count;
+Elf32_Half section_header_entry_size;
+Elf32_Half section_header_count;
+Elf32_Half section_name_string_index;
 } ElfHeader;
 
 void read_elf_header(int fd, ElfHeader *header);
