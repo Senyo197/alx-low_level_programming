@@ -13,7 +13,7 @@ void read_elf_header(int fd, ElfHeader *header)
 void print_magic(unsigned char *ident)
 {
 	unsigned int i = 0;
-	printf("Magic:   ");
+	printf("  Magic:   ");
 
 	for (i = 0; i < EI_NIDENT; i++)
 		printf("%02x ", ident[i]);
@@ -22,7 +22,7 @@ void print_magic(unsigned char *ident)
 
 void print_class(unsigned char elf_class)
 {
-	printf("Class:   ");
+	printf("  Class:                             ");
 	switch (elf_class)
 	{
 		case ELFCLASSNONE:
@@ -42,7 +42,7 @@ void print_class(unsigned char elf_class)
 
 void print_data(unsigned char data_encoding)
 {
-	printf("Data:   ");
+	printf("  Data:                              ");
 	switch (data_encoding)
 	{
 		case ELFDATANONE:
@@ -62,11 +62,11 @@ void print_data(unsigned char data_encoding)
 
 void print_version(Elf32_Word version)
 {
-	printf("Version: %u", version);
+	printf("  Version:                           %d", version);
 	switch (version)
 	{
 		case EV_CURRENT:
-			printf(" (current)\n");
+			printf("(current)\n");
 			break;
 		default:
 			printf("\n");
@@ -77,7 +77,7 @@ void print_version(Elf32_Word version)
 
 void print_osabi(unsigned char osabi)
 {
-	printf("OS/ABI:  ");
+	printf("  OS/ABI:                            ");
 	switch (osabi)
 	{
 		case ELFOSABI_NONE:
@@ -97,13 +97,13 @@ void print_osabi(unsigned char osabi)
 
 void print_abi_version(unsigned char abi_version)
 {
-	printf("ABI Version: %u\n", abi_version);
+	printf("  ABI Version:                       %d\n", abi_version);
 }
 
 
 void print_file_type(Elf32_Half file_type)
 {
-	printf("Type:   ");
+	printf("  Type:                              ");
 	switch (file_type)
 	{
 		case ET_NONE:
@@ -130,7 +130,8 @@ void print_file_type(Elf32_Half file_type)
 
 void print_entry_point(Elf32_Addr entry_point)
 {
-	printf("Entry:   %08x/n", entry_point);
+	printf("  Entry point address:               0x%lx\n",
+			(unsigned long)entry_point);
 }
 
 
@@ -145,7 +146,7 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 
-	elf_fd = open(argv[0], O_RDONLY);
+	elf_fd = open(argv[1], O_RDONLY);
 	if (elf_fd == -1)
 	{
 		perror("Error opening file");
@@ -155,6 +156,7 @@ int main(int argc, char *argv[])
 	read_elf_header(elf_fd, &elf_header);
 	close(elf_fd);
 
+	printf("ELF Header:\n");
 	print_magic(elf_header.ident);
 	print_class(elf_header.ident[EI_CLASS]);
 	print_data(elf_header.ident[EI_DATA]);
