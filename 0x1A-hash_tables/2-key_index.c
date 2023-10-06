@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
-*Determines the index of key
+*key_index - Determines the index of key
 *@key: The Key's index to determined
 *@size: size of the values
 *Return: The index of the key
