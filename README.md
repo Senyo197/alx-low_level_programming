@@ -1,1 +1,1 @@
-This is a directory for C programming
+This directory contains projects on hash tables
