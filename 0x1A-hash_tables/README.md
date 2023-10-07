@@ -1,1 +1,1 @@
-This directory contains project on hash tables
+This directory contains project on hash table
