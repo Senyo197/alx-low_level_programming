@@ -1,0 +1,9 @@
+#Makefile for building the 'school' executable
+
+all: school
+
+school: main.c school.c
+	gcc: $@ $^
+
+clean:
+	rm -f school
