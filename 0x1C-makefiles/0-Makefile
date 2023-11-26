@@ -1,9 +1,8 @@
 #Makefile for building the 'school' executable
 
-all: school
+cc = gcc
 
-school: main.c school.c
-	gcc: $@ $^
+src = main.c school.c
 
-clean:
-	rm -f school
+all: $(src)
+	$(cc) $(src) -o school
