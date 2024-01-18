@@ -5,6 +5,7 @@
 *using the Linear search algorithm
 *@array: Array to be searched
 *@size: The size of the array
+*@value: The value to be find
 *Return: Return seached value if found, else -1
 */
 
@@ -15,7 +16,7 @@ int linear_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-	for (i = 1; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 		if (array[i] == value)
